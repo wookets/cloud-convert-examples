@@ -1,0 +1,12 @@
+{
+  "name": "cloudconvert",
+  "version": "0.1.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {},
+  "author": "wookets",
+  "license": "ISC",
+  "dependencies": {
+    "request": "^2.36.0"
+  }
+}
