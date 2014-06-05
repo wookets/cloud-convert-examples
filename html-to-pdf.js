@@ -23,7 +23,7 @@ request.post(options, function (error, response, body) {
     }
     console.log('response', body)
     var file = fs.createWriteStream("simple.pdf");
-    http.get('http:' + JSON.parse(body).output.url, function(response) {
+    request.get('https:' + JSON.parse(body).output.url, function(err, response, body) {
       response.pipe(file);
     });
   })
